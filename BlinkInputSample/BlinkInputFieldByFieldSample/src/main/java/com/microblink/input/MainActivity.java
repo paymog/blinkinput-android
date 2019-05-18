@@ -148,7 +148,7 @@ public class MainActivity extends BaseMenuActivity {
         engineOptions.setColorDropoutEnabled(true);
 
         // now let's create a RegexParser
-        mVinParser = new RegexParser("[A-Z0-9]{17}", engineOptions);
+        mVinParser = new RegexParser("[0-9 ]{15}", engineOptions);
 
         // same as in simple integration, create a scan element bundle
         mFieldByFieldBundle = new FieldByFieldBundle(
